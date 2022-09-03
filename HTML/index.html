@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"> <!--Задает кодировку страницы. Для корректного отображения русских букв лучше использовать UTF-8 или Unicode-->
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale="2.0"> <!--автоматические границы для устройства-->
+        <!--meta http-equiv="refresh" content="20; url=page4.html"-->
+        <title>Conference</title>
+        <link rel="stylesheet" type="text/css" href="E:/Dubna/Программные технологии ИНТЕРНЕТ Часть I\ДЗ..\CSS\text.css">
+        <link rel="stylesheet" type="text/css" href="..\CSS\input.css">
+    </head>
+    <header> <!--Шапка сайта-->
+    </header>
+    <body> <!--Тело сайта-->
+        <div>
+            <form name="RegistrationForm" class="decor" action="./HTML/UserConference.html", metod="POST">
+                <div class="form_inner">
+                   <input  id="name" name="name" type="text" placeholder="Имя" pattern="[А-Яа-яЁё]+" required>
+                   <input  id="middlename" name="middlename" type="text" placeholder="Отчество" pattern="[А-Яа-яЁё]+" required>
+                   <input  name="lastname" type="text" placeholder="Фамилия" pattern="[А-Яа-яЁё]+" required>
+                   <input  name="birthday" type="date" placeholder="12.12.1990">
+                   <input  name="mail" type="email" placeholder="Email" required>
+                   <input  name="phone" type="tel" name="phone" placeholder="+7-999-888-77-66" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                   <select  name="subjects" form="RegistrationForm" required>
+                       <option value="Математика">Математика</option>
+                       <option value="Физика">Физика</option>
+                       <option value="Информатика">Информатика</option>
+                   </select>
+                   <div class="group_radio">
+                    <div class="inp_radio inp_radio_1">
+                        <input  name="lector" type="radio" name="doklad" id="radio_1">
+                        <label for="radio_1">Докладчик</label>
+                       </div>
+                       <div class="inp_radio inp_radio_2">
+                        <input  name="listener" type="radio" name="doklad" id="radio_2" checked required>
+                        <label for="radio_2">Слушатель</label>
+                       </div>
+                   </div>
+                   </form>            
+                   <input type="submit" value="Отправить">
+                </div>
+             </form>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>
+<!-- action="./PHP/UserConference.php" -->

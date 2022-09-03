@@ -1,0 +1,47 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   background: burlywood;
+}
+body {
+   margin: 0px;
+   padding: 0px;
+}
+main {
+   position: relative;
+    background: rgb(175, 165, 107);
+    border-radius: 30px;
+    border: 10px solid burlywood;
+  }
+  h3 {
+   text-align: center;
+   -webkit-box-align: calc(center, -20%);
+   color: #7c795d; 
+   font-family: ‘Trocchi’, serif; 
+   font-size: 45px; 
+   font-weight: normal; 
+   line-height: 48px; 
+   margin: 0;
+  }
+  .block{
+   margin: 0px;
+   padding: 0px;
+   display: block;
+  }
+  .text{
+   text-align: center;
+   text-decoration: dashed;
+   font-family: ‘Trocchi’, serif; 
+   font-size: 20px; 
+  }
+  .link_left {
+   color: #356d00; 
+   background: #fff4a3; 
+   text-decoration: none; 
+  }
+  /* @keyframes background {
+    35% {
+      background: skyblue;
+      box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
+  } */

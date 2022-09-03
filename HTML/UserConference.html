@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale="2.0">
+  <link rel="stylesheet" type="text/css">
+  <title>Данные для входа</title>
+</head>
+<body>
+<h1 align="center">Регистрация прошла успешно!</h1>
+<?php
+  $name = $_POST['name'];
+  $middlename  = $_POST['middlename'];
+
+  echo  $name, ' ', $middlename;
+?>
+<label for="name"><?php echo $_POST['name'];</label>
+</body>
+</html>
+
+ 

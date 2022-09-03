@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+ }
+  body {
+    background: rgb(245, 217, 186);
+    text-align: center;
+    position: relative;
+ } 
+ .decor {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: rgb(240, 187, 118);
+    border-radius: 30px;
+ }
+ .form_inner {
+    padding: 50px;
+ }
+ .form_inner input {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+ }
+ .form_inner input[type="submit"] {
+    margin-top: 30px;
+    background: #f69a73;
+    border-bottom: 4px solid #d87d56;
+    color: white;
+    font-size: 14px;
+ }
+ .form_inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+ }
+ .form_inner select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    background: #b6f1bb;
+    line-height: 40px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 24px;
+ }
+ .form_inner select option{
+    display: list-item;
+    enable-background: initial;
+    background-color: #e5f1a1;
+    line-height:30px;
+ }
+ .form_inner input[type="checkbox"] {
+    display: flex;
+    background: #d87d56;
+ }
+ .form_inner input[type="radio"] {
+    display: block;
+    background: #d87d56;
+    padding: 0 20px;
+ }
+ /*Input type radio*/
+ .group_radio {
+	display: inline-block;
+	overflow: hidden;
+}
+.inp_radio {
+	display: inline-block;
+}
+.inp_radio input[type=radio] {
+	display: none;
+}
+.inp_radio label {
+	display: inline-block;
+	padding: 0px 15px;   
+	line-height: 34px;    
+	border: 1px solid #999;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;   
+}
+.group_radio .inp_radio_1 label {
+	border-radius: 6px 0 0 6px;
+}
+.group_radio .inp_radio_2 label {
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid #999;
+}
+.group_radio  input[type=radio]:checked + label {
+	background: #83f8b0;
+}
+.group_radio  input[type=radio]:checked + label {
+	background: #83f8b0;
+}
+input:invalid {
+   border: 1px dashed;
+ }
+ 
+ input:valid {
+   border: 2px solid;
+ }
